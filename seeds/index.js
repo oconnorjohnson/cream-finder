@@ -7,7 +7,7 @@ const seedAll = async () => {
 
   await seedUser();
 
-  //await seedTruck();
+  await seedTruck();
 
   process.exit(0);
 };

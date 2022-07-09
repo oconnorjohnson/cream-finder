@@ -2,13 +2,14 @@ const { Truck } = require('../models');
 
 const Truckdata = [
   {
-    title: 'Blossoming Apricot',
-    artist: 'LedyX',
-    exhibition_date: 'March 30, 2018',
-    gallery_id: 1,
-    filename: '01-blossoming-apricot.jpg',
-    description:
-      'Branches with pink apricot blossoms against a blue background.',
+    userName: 'test',
+    email: 'test@test.com',
+    password: 'password',
+    backgroundTest: true,
+    firstName: 'test',
+    driver: true,
+    driver_id: 'testdriver',
+    truck_name: 'trucktest'
   },
 ];
 

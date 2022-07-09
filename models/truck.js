@@ -1,14 +1,15 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+const User = require('./User');
 
-class User extends Model {
+class Truck extends User {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-User.init(
+Truck.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -47,7 +48,15 @@ User.init(
     driver: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-    }
+    },
+    driver_id: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+        truck_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
   },
   {
     hooks: {
@@ -60,8 +69,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'Truck',
   }
 );
 
-module.exports = User;
+module.exports = Truck;
