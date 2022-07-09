@@ -42,14 +42,19 @@ User.init(
     firstName: {
         type: DataTypes.STRING,
         allowNull: false,
-    
     },
     driver: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-    }
+    },
+    driver_id: {
+    type: DataTypes.STRING,
+    allowNull: false,
   },
-  {
+    truck_name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
     hooks: {
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
