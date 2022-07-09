@@ -1,5 +1,7 @@
 const { Truck } = require('../models');
 
+
+
 const Truckdata = [
   {
     userName: 'test',
