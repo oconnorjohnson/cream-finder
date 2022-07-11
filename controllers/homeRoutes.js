@@ -1,12 +1,24 @@
 const router = require('express').Router();
-const { User } = require('../models');
+// const { User } = require('../models');
 
 router.get('/', async (req, res) => {
-    // Store the bookData in a variable once the promise is resolved.
-    const userData = await User.findAll();
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/profile');
+      return;
+    }
   
-    // Return the userData promise inside of the JSON response
-    return res.json(userData);
+    res.render('login');
   });
   
+
+  // router.get('/login', (req, res) => {
+  //   // If the user is already logged in, redirect the request to another route
+  //   if (req.session.logged_in) {
+  //     res.redirect('/profile');
+  //     return;
+  //   }
+  
+  //   res.render('login');
+  // });
   module.exports = router;
