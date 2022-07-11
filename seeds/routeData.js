@@ -37,22 +37,22 @@ const Routedata = [
     eta_5: '3:30 PM',
     Week_days: 'M, W, F'
   },{
-    address_1: 'testRoute1',
-    stop_1: ,
-    eta_1: '11:00AM',
-    address_2: 'testRoute2',
-    stop_2: ,
-    eta_2: '11:10AM',
-    address_3: 'testRoute3',
-    stop_3: ,
-    eta_3: '11:15AM',
-    address_4: 'testRoute4',
-    stop_4: ,
-    eta_4: '11:30AM',
-    address_5: 'testRoute5',
-    stop_5:
-    eta_5: '11:45AM',
-    Week_days: 'test MWF'
+    address_1: '10101 Wilshire Blvd, Los Angeles, CA 90024',
+    stop_1: 'The Los Angeles Country Club',
+    eta_1: '11:30 AM',
+    address_2: '200 Santa Monica Pier, Santa Monica, CA 90401',
+    stop_2: 'Santa Monica Pier',
+    eta_2: '12:30 PM',
+    address_3: 'Venice, CA 90261',
+    stop_3: 'Venice Beach',
+    eta_3: '2:00 PM',
+    address_4: '1900 Pico Blvd, Santa Monica, CA 90405',
+    stop_4: 'Santa Monica College',
+    eta_4: '3:30 PM',
+    address_5: '13650 Mindanao Way, Marina Del Rey, CA 90292',
+    stop_5: 'Burton Chace Park',
+    eta_5: '5:00 PM',
+    Week_days: 'SA, SU'
   },{
     address_1: 'testRoute1',
     stop_1: ,
