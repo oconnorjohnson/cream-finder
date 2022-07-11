@@ -51,11 +51,11 @@ Truck.init(
     },
     driver_id: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
         truck_name: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
   },
   {
