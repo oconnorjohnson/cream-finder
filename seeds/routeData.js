@@ -54,22 +54,22 @@ const Routedata = [
     eta_5: '5:00 PM',
     Week_days: 'SA, SU'
   },{
-    address_1: 'testRoute1',
-    stop_1: ,
-    eta_1: '11:00AM',
-    address_2: 'testRoute2',
-    stop_2: ,
-    eta_2: '11:10AM',
-    address_3: 'testRoute3',
-    stop_3: ,
-    eta_3: '11:15AM',
-    address_4: 'testRoute4',
-    stop_4: ,
-    eta_4: '11:30AM',
-    address_5: 'testRoute5',
-    stop_5:
-    eta_5: '11:45AM',
-    Week_days: 'test MWF'
+    address_1: '7313-7351 S Marine Ave, Playa Del Rey, CA 90293',
+    stop_1: 'Playa Del Rey Beach',
+    eta_1: '10:00 AM',
+    address_2: 'Green Valley Cir &, Buckingham Pkwy, Culver City, CA 90230',
+    stop_2: 'Fox Hills Park',
+    eta_2: '12:00 PM',
+    address_3: '4100 S La Cienega Blvd, Los Angeles, CA 90056',
+    stop_3: 'Kenneth Hahn State Recreation Area',
+    eta_3: '2:00 PM',
+    address_4: '5905 Wilshire Blvd, Los Angeles, CA 90036',
+    stop_4: 'Los Angeles County Museum of Art',
+    eta_4: '3:00 PM',
+    address_5: 'Los Angeles, CA 90095',
+    stop_5: 'UCLA',
+    eta_5: '4:30 PM',
+    Week_days: 'W-SU'
   }
 ];
 
