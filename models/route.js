@@ -23,7 +23,21 @@ class Route extends Model {
               len: [42],
             },
         },
+        eta_1: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [42],
+            },
+        },
         address_2: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [42],
+            },
+        },
+        eta_2: {
             type: DataTypes.STRING,
             allowNull: true,
             validate: {
@@ -37,6 +51,13 @@ class Route extends Model {
               len: [42],
             },
         },
+        eta_3: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [42],
+            },
+        },
         address_4: {
             type: DataTypes.STRING,
             allowNull: true,
@@ -44,7 +65,21 @@ class Route extends Model {
               len: [42],
             },
         },
+        eta_4: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [42],
+            },
+        },
         address_5: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [42],
+            },
+        },
+        eta_5: {
             type: DataTypes.STRING,
             allowNull: true,
             validate: {
