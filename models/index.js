@@ -2,8 +2,6 @@ const User = require('./User');
 const Truck = require('./truck')
 const Route = require('./route')
 
-// module.exports = { Truck };
-
 User.hasMany(Truck, {
     foreignKey: 'id',
     onDelete: 'CASCADE'
