@@ -2,15 +2,45 @@ const { Truck } = require('../models');
 
 const Truckdata = [
   {
-    userName: 'test',
-    email: 'test@test.com',
+    userName: 'comfycone',
+    email: 'mario@gmail.com',
     password: 'password',
     backgroundTest: true,
-    firstName: 'test',
+    firstName: 'Mario',
     driver: true,
-    driver_id: 'testdriver',
-    truck_name: 'trucktest'
+    dl_num: 'N5529780',
+    truck_name: 'The Comfy Cone'
   },
+  {
+    userName: 'teamcream',
+    email: 'birdo@gmail.com',
+    password: 'password',
+    backgroundTest: true,
+    firstName: 'Birdo',
+    driver: true,
+    dl_num: 'L2141606',
+    truck_name: 'Team Cream'
+  },
+  {
+    userName: 'jealousgelato',
+    email: 'lakitu@gmail.com',
+    password: 'password',
+    backgroundTest: true,
+    firstName: 'lakitu',
+    driver: true,
+    dl_num: 'E2891159',
+    truck_name: 'Jealous Gelato'
+  },
+  {
+    userName: 'stickyfingers ',
+    email: 'daisy@gmail.com',
+    password: 'password',
+    backgroundTest: true,
+    firstName: 'Daisy',
+    driver: true,
+    dl_num: 'X2106782',
+    truck_name: 'Sticky Fingers'
+  }
 ];
 
 const seedTrucks = () =>Truck.bulkCreate(Truckdata);

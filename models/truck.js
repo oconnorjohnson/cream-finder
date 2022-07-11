@@ -49,7 +49,7 @@ Truck.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
-    driver_id: {
+    dl_num: {
         type: DataTypes.STRING,
         allowNull: true,
       },
