@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User } = require('../models');
 
 router.get('/', async (req, res) => {
     // Store the bookData in a variable once the promise is resolved.
@@ -9,3 +9,4 @@ router.get('/', async (req, res) => {
     return res.json(userData);
   });
   
+  module.exports = router;
