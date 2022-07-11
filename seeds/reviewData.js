@@ -1,13 +1,14 @@
-const { Review } = require('../models');
+const { Review } = require("../models");
 
 const Reviewdata = [
   {
-    review: {
-        review: 'The driver was a creep',
-    },
+    review: "Tasty",
   },
+  {
+    review: "awful",
+  }
 ];
 
-const seedReview = () =>Review.bulkCreate(Reviewdata);
+const seedReview = () => Review.bulkCreate(Reviewdata);
 
 module.exports = seedReview;
