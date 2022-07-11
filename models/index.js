@@ -1,6 +1,7 @@
 const User = require('./User');
 const Truck = require('./truck')
-const Route = require('./route')
+const Route = require('./route');
+const Review = require('./review');
 
 User.hasMany(Truck, {
     foreignKey: 'id',
@@ -15,5 +16,9 @@ User.hasMany(Truck, {
     foreignKey: 'id'
   });
 
+  Review.belongsTo(User, {
+    foreignKey: 'id'
+  });
 
-module.exports = { User, Truck, Route };
+
+module.exports = { User, Truck, Route, Review };
