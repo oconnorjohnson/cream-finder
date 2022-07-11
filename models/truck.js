@@ -4,9 +4,9 @@ const sequelize = require('../config/connection');
 const User = require('./User');
 
 class Truck extends User {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
+  // checkPassword(loginPw) {
+  //   return bcrypt.compareSync(loginPw, this.password);
+  // }
 }
 
 Truck.init(
@@ -53,18 +53,18 @@ Truck.init(
         type: DataTypes.STRING,
         allowNull: true,
       },
-        truck_name: {
+    truck_name: {
         type: DataTypes.STRING,
         allowNull: true,
       },
   },
+  // {
+  //   hooks: {
+  //     beforeCreate: async (newUserData) => {
+  //       newUserData.password = await bcrypt.hash(newUserData.password, 10);
+  //       return newUserData;
+  //     },
   {
-    hooks: {
-      beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
-      },
-    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

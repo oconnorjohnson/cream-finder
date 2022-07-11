@@ -3,9 +3,6 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class Route extends Model {
-    // Need to bcrypt checkPassword(loginPw) {
-    //   return bcrypt.compareSync(loginPw, this.password);
-    // }
 }
 
   Route.init(
@@ -30,6 +27,13 @@ class Route extends Model {
               len: [42],
             },
         },
+        stop_1: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [30],
+            },
+        },
         address_2: {
             type: DataTypes.STRING,
             allowNull: true,
@@ -42,6 +46,13 @@ class Route extends Model {
             allowNull: true,
             validate: {
               len: [42],
+            },
+        },
+        stop_2: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [30],
             },
         },
         address_3: {
@@ -58,6 +69,13 @@ class Route extends Model {
               len: [42],
             },
         },
+        stop_3: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [30],
+            },
+        },
         address_4: {
             type: DataTypes.STRING,
             allowNull: true,
@@ -72,6 +90,13 @@ class Route extends Model {
               len: [42],
             },
         },
+        stop_4: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [30],
+            },
+        },
         address_5: {
             type: DataTypes.STRING,
             allowNull: true,
@@ -84,6 +109,13 @@ class Route extends Model {
             allowNull: true,
             validate: {
               len: [42],
+            },
+        },
+        stop_5: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+              len: [30],
             },
         },
         Week_days: {
