@@ -24,7 +24,7 @@ Route.belongsTo(User, {
 
 User.hasMany(Route, {
   foreignKey: "route_id"
-})
+});
 
 Review.belongsTo(User, {
   foreignKey: "id",
