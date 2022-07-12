@@ -18,6 +18,14 @@ Route.belongsTo(Truck, {
   foreignKey: "truck_id",
 });
 
+Route.belongsTo(User, {
+  foreignKey: "route_id"
+}); 
+
+User.hasMany(Route, {
+  foreignKey: "route_id"
+})
+
 Review.belongsTo(User, {
   foreignKey: "id",
 });

@@ -38,7 +38,7 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+      // res.json({ user: userData, message: 'You are now logged in!' });
     });
     const user = userData.get({plain:true})
     console.log(user);
@@ -46,7 +46,7 @@ router.post('/login', async (req, res) => {
       res.render('truckprofile');
     }
     else {
-      res.render('landingpage')
+      res.render('homepage')
     }
 
   } catch (err) {
