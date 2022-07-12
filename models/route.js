@@ -21,10 +21,17 @@ class Route extends Model {
           type: DataTypes.INTEGER,
           allowNull: true,
       },
-      truck_id: {
+      // truck_id: {
+      //   type: DataTypes.INTEGER,
+      //   references: {
+      //     model:"truck",
+      //     key: "id"
+      //   }
+      // },
+      user_id: {
         type: DataTypes.INTEGER,
         references: {
-          model:"truck",
+          model:"user",
           key: "id"
         }
       },

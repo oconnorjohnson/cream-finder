@@ -17,42 +17,6 @@ Truck.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    userName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8],
-      },
-    },
-    backgroundTest: {
-        type: DataTypes.BOOLEAN,
-        allowNull: true,
-    },
-    firstName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    
-    },
-    driver: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-    },
-    dl_num: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
     truck_name: {
         type: DataTypes.STRING,
         allowNull: true,
