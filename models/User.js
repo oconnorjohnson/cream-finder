@@ -51,9 +51,9 @@ User.init(
         allowNull: false,
     },
     // hooks: {
-    //   beforeCreate: async (newUserData) => {
-    //     newUserData.password = await bcrypt.hash(newUserData.password, 10);
-    //     return newUserData;
+    //   beforeCreate: async (UserData) => {
+    //     UserData.password = await bcrypt.hash(UserData.password, 2);
+    //     return UserData;
     //   },
     // },
   },

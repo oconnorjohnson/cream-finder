@@ -1,13 +1,33 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-router.post('/', async (req, res) => {
+//GET request for the sign-up form
+router.get('/signup', async (req, res) => {
+  const userData = await User.findAll().catch((err) => {
+    res.json(err);
+  });
+  res.json(userData);
+});
+
+
+
+// router.get('/user', async (req, res) => {
+//   try {
+//     const userData = await User.create(req.body);
+    
+    
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
+
+router.post('/user', async (req, res) => {
   try {
     const userData = await User.create(req.body);
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
+      req.body.user_id = userData.id;
+      req.body.logged_in = true;
 
       res.status(200).json(userData);
     });
