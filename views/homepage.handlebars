@@ -1,63 +1,13 @@
-<div class='review-container'>
-  <div class='card-header col-md-10'>
-    <h2>
-      &#127869 Reviews
-    </h2>
-  </div>
-  {{#each reviews as |review|}}
-    <div class='review col-md-5'>
-      <p>
-        {{review.id}}.
-        {{review.review}}
-      </p>
-    </div>
-    <div class='col-md-7'>
-      <p>
-        Guest:
-        {{review.guest_name}}
-      </p>
-    </div>
-  {{/each}}
-  <div class='add-review-container'>
-    <h2>
-      RSVP with the review you plan to bring!
-    </h2>
-    <form class='new-review-form'>
-      <label for='review_name'>
-        review Name:
-      </label>
-      <br />
-      <textarea id='review_name' name='review_name' rows='2' cols='30'>
-        {{review_name}}
-      </textarea>
-      <br />
-      <label for='description'>
-        Description:
-      </label>
-      <br />
-      <textarea id='description' name='description' rows='5' cols='30'>
-        {{description}}
-      </textarea>
-      <br />
-      <label for='guest_name'>
-        Guest Name:
-      </label>
-      <br />
-      <textarea id='guest_name' name='guest_name' rows='2' cols='30'>
-        {{guest_name}}
-      </textarea>
-      <br />
-      <br />
-      <input type='checkbox' id='has_nuts' name='has_nuts' value='true' />
-      <label for='has_nuts'>
-        Check box if this review contains nuts
-      </label>
-      <br />
-      <button type='submit' value='Submit'>
-        Submit
-      </button>
-    </form>
-  </div>
-</div>
-<!-- This is the form for adding a new review -->
-<script src='/js/review.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">>
+  <title>Document</title>
+</head>
+<body>
+    {{{ body }}}
+</body>
+</html>

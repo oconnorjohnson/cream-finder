@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome, {{user.firstName}}!</h2>
   </div>
 </div>
 
@@ -39,22 +39,22 @@
     </form>
   </div>
 
-  {{#if projects.length}}
   <div class="col-md-6 project-list">
     <h3>Current Routes:</h3>
 
-    {{#each routes as |route|}}
+    {{#each user.Routes as |route|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4>{{route.routeid}}</h4>
       </div>
       <div class="col-md-4">
+        <span>{{route.address}}</span>
         <button class="btn btn-sm btn-danger" data-id="{{route.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
   </div>
-  {{/if}}
+
 </div>
 
 <script src="./js/profile.js"></script>
