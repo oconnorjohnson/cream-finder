@@ -1,8 +1,45 @@
 :root {
-    --cream: #19a9c6;
+    --cream: #90bac2;
 }
 
 * {
-font-family: 'Monoton', cursive;
-font-family: 'Open Sans', sans-serif;
+    display: flexbox;
+font-family: 'Modak', cursive;
+/* font-family: 'Open Sans', sans-serif; */
+background-color: var(--cream);
+justify-content: center;
+font-weight: lighter;
 }
+
+
+
+
+
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background: var(--cream);
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: var(--cream);
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color:var(--cream);
+    }
+  }
+  
+
+
+
+
