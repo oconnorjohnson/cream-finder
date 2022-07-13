@@ -71,8 +71,9 @@ router.get('/truckprofile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 console.log(user);
+// console.log(...user);
     res.render('truckprofile', {
-      ...user,
+      user,
       logged_in: true
     });
   } catch (err) {

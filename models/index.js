@@ -11,19 +11,19 @@ User.hasOne(Truck, {
 Truck.belongsTo(User, {
   foreignKey: "user_id",
 });
-Truck.hasMany(Route, {
-  foreignKey: "truck_id",
-});
-Route.belongsTo(Truck, {
-  foreignKey: "truck_id",
-});
+// Truck.hasMany(Route, {
+//   foreignKey: "truck_id",
+// });
+// Route.belongsTo(Truck, {
+//   foreignKey: "truck_id",
+// });
 
 Route.belongsTo(User, {
-  foreignKey: "route_id"
+  foreignKey: "user_id",
 }); 
 
 User.hasMany(Route, {
-  foreignKey: "route_id"
+  foreignKey: "user_id",
 });
 
 Review.belongsTo(User, {

@@ -26,6 +26,7 @@ Route.init(
         model: "truck",
         key: "id",
       },
+<<<<<<< HEAD
     },
   },
   {
@@ -35,6 +36,30 @@ Route.init(
     underscored: true,
     modelName: "Route",
   }
+=======
+      // truck_id: {
+      //   type: DataTypes.INTEGER,
+      //   references: {
+      //     model:"truck",
+      //     key: "id"
+      //   }
+      // },
+      user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model:"user",
+          key: "id"
+        }
+      },
+    }, 
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'Route',
+    }
+>>>>>>> 01303b95d2914308ec36414c481b2fdddf6da022
 );
 
 module.exports = Route;

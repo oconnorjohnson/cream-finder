@@ -59,7 +59,7 @@ router.post('/login', async (req, res) => {
       req.session.logged_in = true;
       
       // res.json({ user: userData, message: 'You are now logged in!' });
-    });
+    
     const user = userData.get({plain:true})
     console.log(user);
     if (user.driver) {
@@ -68,7 +68,7 @@ router.post('/login', async (req, res) => {
     else {
       res.render('homepage')
     }
-
+  });
   } catch (err) {
     res.status(400).json(err);
   }
