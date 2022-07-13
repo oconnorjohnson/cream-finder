@@ -44,11 +44,11 @@ User.init(
     },
     firstName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     driver: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
+        allowNull: true,
     },
     // hooks: {
     //   beforeCreate: async (newUserData) => {
