@@ -16,7 +16,8 @@
 display: flexbox;
 font-family: 'Modak', cursive;
 /* font-family: 'Open Sans', sans-serif; */
-background-color: var(--darkblue);
+background-color: var(-white);
+border-radius: 5%;
 color: var(--icecreampink);
 justify-content: center;
 font-weight: lighter;
@@ -36,6 +37,7 @@ font-weight: lighter;
 
 accordian-item {
   background-color: white;
+  border-radius: 5%;
 }
 accordian-body {
   background-color: white;
