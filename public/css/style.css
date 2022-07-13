@@ -11,6 +11,16 @@ justify-content: center;
 font-weight: lighter;
 }
 
+#image {
+  width: 100%;
+  max-width: 99%;
+  height: auto;
+}
+
+accordian-item {
+  background-color: var(--cream);
+}
+
 .btn {
   text-transform: uppercase;
   padding: 10px;
