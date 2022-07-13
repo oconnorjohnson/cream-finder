@@ -7,6 +7,8 @@
 * [General Info](#general-information)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Packages](#Packages)
+* [Technologies](#Technologies)
 * [Contributors](#contributors)
 * [Contact](#contact)
 <!-- * [License](#license) -->
@@ -31,7 +33,27 @@ Once the database has been created, use "npm run seed" in the terminal while in 
 
 
 
-## Video Walkthrough
+## Technologies Used
+* HTML
+* CSS
+* handlebars.js
+* Javascript
+* Mysql
+
+## Packages
+* bcrypt: ^5.0.0,
+* chalk: ^5.0.1,
+* colors: ^1.4.0,
+* connect-session-sequelize: ^7.0.4,
+* dotenv: ^8.2.0,
+* express: ^4.18.1,
+* express-handlebars: ^5.2.0,
+* express-session: ^1.17.1,
+* handlebars: ^4.7.7,
+* less: ^4.1.3,
+* mysql2: ^2.3.3,
+* sequelize: ^6.21.2
+
 
 
 
@@ -43,8 +65,8 @@ Once the database has been created, use "npm run seed" in the terminal while in 
 
 
 ## Contact ✉️
-Find us on Github @ [prsoulman](http://github.com/prsoulman)
-* ✉️For questions about this project please contact me @: rodri237@umn.edu
+Find us on Github @ [oconnorjohnson](http://github.com/oconnorjohnson)
+* ✉️For questions about this project please contact me @: creamfinder@gmail.com
 
 
 
