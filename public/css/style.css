@@ -17,6 +17,7 @@ display: flexbox;
 font-family: 'Modak', cursive;
 /* font-family: 'Open Sans', sans-serif; */
 background-color: var(--darkblue);
+color: var(--icecreampink);
 justify-content: center;
 font-weight: lighter;
 }
@@ -26,18 +27,30 @@ font-weight: lighter;
   max-width: 99%;
   height: auto;
 }
+#truckinfo.col-md-6 {
+  background-color: white;
+  border:#4a4a4a;
+  border-width: 2px;
+}
+
 
 accordian-item {
-  background-color: var(--darkblue);
+  background-color: white;
+}
+accordian-body {
+  background-color: white;
 }
 
 .btn {
   text-transform: uppercase;
   padding: 10px;
   box-shadow: 0px 3px 0px #4a4a4a;
+  background-color: white;
 }
 
-
+strong {
+  background-color: var(white);
+}
 
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
