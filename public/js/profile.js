@@ -2,16 +2,21 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const routeName = document.querySelector('#route-name').value.trim();
-  const address = document.querySelector('#address').value.trim();
-  const stop2 = document.querySelector('#second-stop').value.trim();
-  const stop3 = document.querySelector('#third-stop').value.trim();
-  const stop4 = document.querySelector('#fourth-stop').value.trim();
-  const stop5 = document.querySelector('#fifth-stop').value.trim();
-
-  if (address) {
+  const address1 = document.querySelector('#address').value.trim();
+  const address2 = document.querySelector('#second-stop').value.trim();
+  const address3 = document.querySelector('#third-stop').value.trim();
+  const address4 = document.querySelector('#fourth-stop').value.trim();
+  const address5 = document.querySelector('#fifth-stop').value.trim();
+ const addressObj1 = {address:address1, order:1}
+ const addressObj2 = {address:address2, order:2}
+ const addressObj3 = {address:address3, order:3}
+ const addressObj4 = {address:address4, order:4}
+ const addressObj5 = {address:address5, order:5}
+ 
+  if (address1 && address2 && address3 && address4 && address5) {
     const response = await fetch(`/api/routes`, {
       method: 'POST',
-      body: JSON.stringify({address}),
+      body: JSON.stringify({addressObj1, addressObj2, addressObj3, addressObj4, addressObj5 }),
       headers: {
         'Content-Type': 'application/json',
       },
