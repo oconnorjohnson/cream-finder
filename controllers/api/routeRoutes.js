@@ -2,13 +2,31 @@ const router = require('express').Router();
 const { Route } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', async (req, res) => {
-  try {
-    const newRoute = await Route.create({
-      ...req.body,
-      // route_id: req.session.user_id,
-    });
+// router.post('/', async (req, res) => {
+//   try {
+//     const newRoute = await Route.create({
+//       ...req.body,
+//       user_id: req.session.user_id,
+//     });
 
+//     res.status(200).json(newRoute);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
+router.post('/', async (req, res) => {
+  // console.log(req.body);
+  // console.log({...req.body.addressObj1, user_id: req.session.user_id});
+  // console.log(req.body.addressObj2);
+  try {
+    const newRoute = await Route.bulkCreate([
+      {...req.body.addressObj1, user_id: req.session.user_id},
+      {...req.body.addressObj2, user_id: req.session.user_id},
+      {...req.body.addressObj3, user_id: req.session.user_id},
+      {...req.body.addressObj4, user_id: req.session.user_id},
+      {...req.body.addressObj5, user_id: req.session.user_id}
+    ]);
+console.log(newRoute);
     res.status(200).json(newRoute);
   } catch (err) {
     res.status(400).json(err);
