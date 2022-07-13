@@ -42,7 +42,7 @@ const Routedata = [
     user_id: 2
   },
   {
-    address: 'Playground Pavillion, SOuth La Brea Ave, Los Angeles, CA 90036, ETA: 2:30 PM',
+    address: 'Playground Pavillion, South La Brea Ave, Los Angeles, CA 90036, ETA: 2:30 PM',
     order: 4,
     user_id: 2
   },
