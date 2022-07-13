@@ -1,12 +1,22 @@
 :root {
-    --cream: #90bac2;
+    --lightblue: #e3f2fd;
+    --blue: #bbdefb;
+    --darkblue: #90caf9;
+    --darkestblue: #64b5f6;
+    --shadowblue: #0d47a1;
+    --lightyellow: #fff9c4;
+    --yellow: #fff59d;
+    --darkyellow: #fff176;
+    --sunshadowyellow: #fdd835;
+    --icecreampink: #f48fb1;
+    --coneorange: #ffd180;
 }
 
 * {
 display: flexbox;
 font-family: 'Modak', cursive;
 /* font-family: 'Open Sans', sans-serif; */
-background-color: var(--cream);
+background-color: var(--darkblue);
 justify-content: center;
 font-weight: lighter;
 }
@@ -18,7 +28,7 @@ font-weight: lighter;
 }
 
 accordian-item {
-  background-color: var(--cream);
+  background-color: var(--darkblue);
 }
 
 .btn {
@@ -35,21 +45,21 @@ accordian-item {
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     header {
-      background: var(--cream);
+      background: var(--darkblue);
     }
   }
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     nav {
-      background-color: var(--cream);
+      background-color: var(--darkblue);
     }
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     .sample-img {
-      background-color:var(--cream);
+      background-color:var(--darkblue);
     }
   }
   
