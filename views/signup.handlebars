@@ -1,21 +1,49 @@
-<section class="col-md-3">
-  <h2>SIGNUP</h2>
-
-  <form class="form signup-form">
-    <div class="form-group">
-      <label for="name-signup">NAME:</label>
-      <input class="form-input" type="text" id="name-signup" />
+<section class="container">
+  {{!-- Customer Sign Up --}}
+  <div class="row">
+    <form class="col form business-signup-form">
+      <h3>Sign Up as Business Owner</h3>
+      <div class="form-group d-flex flex-column d-flex flex-column">
+        <label for="business-name-signup">Business Name:</label>
+        <input class="form-input" type="text" id="business-name-signup" />
+      </div>
+      <div class="form-group d-flex flex-column d-flex flex-column">
+        <label for="name-signup">Driver's Name:</label>
+        <input class="form-input" type="text" id="driver-name-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="email-signup">Email:</label>
+        <input class="form-input" type="text" id="company-email-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="password-signup">Password:</label>
+        <input class="form-input" type="password" id="company-password-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <button class="btn btn-primary" type="submit">SIGN UP</button>
+      </div>
+    </form>
+    {{!-- Business Owner Sign Up --}}
+    <div class="col d-flex" style="">
+      <div class="vr" style="width: 2px; color: black"></div>
     </div>
-    <div class="form-group">
-      <label for="email-signup">EMAIL:</label>
-      <input class="form-input" type="text" id="email-signup" />
-    </div>
-    <div class="form-group">
-      <label for="password-signup">PASSWORD:</label>
-      <input class="form-input" type="password" id="password-signup" />
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary" type="submit">SIGNUP</button>
-    </div>
-  </form>
+    <form class="col form signup-form">
+      <h3>Sign Up as Customer</h3>
+      <div class="form-group d-flex flex-column">
+        <label for="name-signup">Name:</label>
+        <input class="form-input" type="text" id="name-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="email-signup">Email:</label>
+        <input class="form-input" type="text" id="email-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="password-signup">Password:</label>
+        <input class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group d-flex flex-column">
+        <button class="btn btn-primary" type="submit">SIGN UP</button>
+      </div>
+    </form>
+  </div>
 </section>
