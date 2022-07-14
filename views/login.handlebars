@@ -1,103 +1,128 @@
-<div class="row">
-  <div class="col-md-3">
-    <h2>LOGIN</h2>
+ <!DOCTYPE html>
+<html lang="en">
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">EMAIL:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">PASSWORD:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">LOGIN</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-3">
-    <h2>SIGNUP</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">NAME:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">EMAIL:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">PASSWORD:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">SIGNUP</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6" id="truckinfo">
-    <h2>ICE CREAM TRUCKS</h2>
-    <div class="accordion" id="truckAccordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              THE COMFY CONE
-            </button>
-          </h2>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+  </head>
+
+  <body> 
+  <div class="row">
+    <div class="col-md-3">
+      <h2>LOGIN</h2>
+
+      <form class="form login-form">
+        <div class="form-group">
+          <label for="email-login">EMAIL:</label>
+          <input class="form-input" type="text" id="email-login" />
         </div>
-        <div id="collapseOne" class="collapse.show" aria-labelledby="headingOne" data-parent="#truckAccordion">
-          <div class="card-body">
-            <strong>Crystal Springs Picnic Area, </strong>4659 Crystal Springs Dr, Los Angeles, CA 90027, <strong>ETA: 11:00 AM</strong><br><strong>Rio De Los Angeles State Park, </strong>41900 N San Fernando Rd, Los Angeles, CA 90065, <strong>ETA: 12:30 PM</strong><br><strong>Los Angeles State Historic Park, </strong>1245 N Spring St, Los Angeles, CA 90012, <strong>ETA: 2:00 PM</strong><br><strong>MacArthur Park, </strong>2230 W 6th St, Los Angeles, CA 90057, <strong>ETA: 4:00 PM</strong><br><strong>Lafayette Park, </strong>5077006901, Los Angeles, CA 90005, <strong>ETA: 5:30 PM</strong>
+        <div class="form-group">
+          <label for="password-login">PASSWORD:</label>
+          <input class="form-input" type="password" id="password-login" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">LOGIN</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3">
+      <h2>SIGNUP</h2>
+
+      <form class="form signup-form">
+        <div class="form-group">
+          <label for="name-signup">NAME:</label>
+          <input class="form-input" type="text" id="name-signup" />
+        </div>
+        <div class="form-group">
+          <label for="email-signup">EMAIL:</label>
+          <input class="form-input" type="text" id="email-signup" />
+        </div>
+        <div class="form-group">
+          <label for="password-signup">PASSWORD:</label>
+          <input class="form-input" type="password" id="password-signup" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">SIGNUP</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6" id="truckinfo">
+      <h2>ICE CREAM TRUCKS</h2>
+      <div class="accordion" id="truckAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                THE COMFY CONE
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#truckAccordion" style="">
+            <div class="card-body">
+              <strong>Crystal Springs Picnic Area, </strong>4659 Crystal Springs Dr, Los Angeles, CA 90027, <strong>ETA: 11:00 AM</strong><br><strong>Rio De Los Angeles State Park, </strong>41900 N San Fernando Rd, Los Angeles, CA 90065, <strong>ETA: 12:30 PM</strong><br><strong>Los Angeles State Historic Park, </strong>1245 N Spring St, Los Angeles, CA 90012, <strong>ETA: 2:00 PM</strong><br><strong>MacArthur Park, </strong>2230 W 6th St, Los Angeles, CA 90057, <strong>ETA: 4:00 PM</strong><br><strong>Lafayette Park, </strong>5077006901, Los Angeles, CA 90005, <strong>ETA: 5:30 PM</strong>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              TEAM CREAM
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse.show" aria-labelledby="headingTwo" data-parent="#truckAccordion">
-          <div class="card-body">
-            <strong>Hollywood Forever Cemetery, </strong>6000 Santa Monica Blvd, Los Angeles, CA 90038, <strong>ETA: 10:00 AM</strong><br><strong>Hancock Park, </strong>5800 Block of Wilshire Blvd, Miracle Mile, Los Angeles, CA <strong>ETA: 11:30 AM</strong><br><strong>Poinsettia Recreation Center, </strong>7341 Willoughby Ave, Los Angeles, CA 90046, <strong>ETA: 1:00 PM</strong><br><strong>Playground Pavilion, </strong>South La Brea Ave, <strong>ETA: 2:30 PM</strong><br><strong>Fairfax High School, </strong>7850 Melrose Ave, Los Angeles, CA 90046, <strong>ETA: 3:30 PM</strong>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-              JEALOUS GELATO
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse.show" aria-labelledby="headingThree" data-parent="#truckAccordion">
-          <div class="card-body">
-            <strong>The Los Angeles Country Club, </strong>10101 Wilshire Blvd, Los Angeles, CA, 90024, <strong>ETA: 11:30 AM</strong><br><strong>Santa Monica Pier, </strong>200 Santa Monica Pier, Santa Monica, CA 90401, <strong>ETA: 12:30 PM</strong><br><strong>Venice Beach, </strong>Venice, CA 90261, <strong>ETA: 2:00 PM</strong><br><strong>Santa Monica College, </strong>1900 Pico Blvd, Santa Moncia, CA 90401,  <strong>ETA: 3:30 PM</strong><br><strong>Burton Chase Park, </strong>13650 Mindanao Way, Marina Del Rey, CA 90292, <strong>ETA: 5:00 PM</strong>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                TEAM CREAM
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#truckAccordion" style="">
+            <div class="card-body">
+              <strong>Hollywood Forever Cemetery, </strong>6000 Santa Monica Blvd, Los Angeles, CA 90038, <strong>ETA: 10:00 AM</strong><br><strong>Hancock Park, </strong>5800 Block of Wilshire Blvd, Miracle Mile, Los Angeles, CA <strong>ETA: 11:30 AM</strong><br><strong>Poinsettia Recreation Center, </strong>7341 Willoughby Ave, Los Angeles, CA 90046, <strong>ETA: 1:00 PM</strong><br><strong>Playground Pavilion, </strong>South La Brea Ave, <strong>ETA: 2:30 PM</strong><br><strong>Fairfax High School, </strong>7850 Melrose Ave, Los Angeles, CA 90046, <strong>ETA: 3:30 PM</strong>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="headingFour">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-              STICKY FINGERS
-            </button>
-          </h2>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                JEALOUS GELATO
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#truckAccordion" style="">
+            <div class="card-body">
+              <strong>The Los Angeles Country Club, </strong>10101 Wilshire Blvd, Los Angeles, CA, 90024, <strong>ETA: 11:30 AM</strong><br><strong>Santa Monica Pier, </strong>200 Santa Monica Pier, Santa Monica, CA 90401, <strong>ETA: 12:30 PM</strong><br><strong>Venice Beach, </strong>Venice, CA 90261, <strong>ETA: 2:00 PM</strong><br><strong>Santa Monica College, </strong>1900 Pico Blvd, Santa Moncia, CA 90401,  <strong>ETA: 3:30 PM</strong><br><strong>Burton Chase Park, </strong>13650 Mindanao Way, Marina Del Rey, CA 90292, <strong>ETA: 5:00 PM</strong>
+            </div>
+          </div>
         </div>
-        <div id="collapseFour" class="collapse.show" aria-labelledby="headingFour" data-parent="#truckAccordion">
-          <div class="card-body">
-            <strong>Playa Del Rey Beach, </strong>7313-7351 S Marine Ave, Playa Del Rey, CA 90263, <strong>ETA: 10:00 AM</strong><br><strong>Fox Hills Park, </strong>Green Valley Cir and Buckingham Pkwy, Culver City, CA 90230, <strong>ETA: 12:00 PM</strong><br><strong>Kenneth Hahn State Recreation Area, </strong>4100 S La Cienega Blvd, Los Angeles, CA 90056, <strong>ETA: 2:00 PM</strong><br><strong>Los Angeles County Museum of Art, </strong>5905 Wilshire Blvd, Los Angeles, CA 90036,  <strong>ETA: 3:00 PM</strong><br><strong>UCLA, </strong>Los Angeles, CA 90095, <strong>ETA: 4:30 PM</strong>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                STICKY FINGERS
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#truckAccordion" style="">
+            <div class="card-body">
+              <strong>Playa Del Rey Beach, </strong>7313-7351 S Marine Ave, Playa Del Rey, CA 90263, <strong>ETA: 10:00 AM</strong><br><strong>Fox Hills Park, </strong>Green Valley Cir and Buckingham Pkwy, Culver City, CA 90230, <strong>ETA: 12:00 PM</strong><br><strong>Kenneth Hahn State Recreation Area, </strong>4100 S La Cienega Blvd, Los Angeles, CA 90056, <strong>ETA: 2:00 PM</strong><br><strong>Los Angeles County Museum of Art, </strong>5905 Wilshire Blvd, Los Angeles, CA 90036,  <strong>ETA: 3:00 PM</strong><br><strong>UCLA, </strong>Los Angeles, CA 90095, <strong>ETA: 4:30 PM</strong>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  </body>
+
+</html>
