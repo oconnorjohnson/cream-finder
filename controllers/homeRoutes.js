@@ -3,12 +3,16 @@ const { Route, User, Truck } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/truckprofile');
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   res.redirect('/truckprofile');
+  //   return;
+  // }
 
-  res.render('login');
+  console.log(req.session, 'asdfasdf')
+
+  res.render('login', {
+    logged_In: req.session.logged_in,
+  });
 });
 
 // router.get('/', async (req, res) => {

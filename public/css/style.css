@@ -50,11 +50,10 @@ img {
   background-color: var(--pinky);
 }
 
-
 #image {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   background-color: var(--pinky);
 }
 
