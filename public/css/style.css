@@ -51,6 +51,11 @@ img {
   /* color: var(--yellow) */
 }
 
+#delete {
+  background-color: var(--pinky);
+  color: var(--lightblue);
+}
+
 #logout {
   background-color: var(--lightblue);
   color: var(--pinky);
