@@ -11,8 +11,6 @@ router.get('/', async (req, res) => {
   res.render('login');
 });
 
-  
-
 // router.get('/', async (req, res) => {
 //   try {
 //     // Get all projects and JOIN with user data
@@ -66,12 +64,12 @@ router.get('/truckprofile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Route }, {model: Truck}],
+      include: [{ model: Route }, { model: Truck }],
     });
 
     const user = userData.get({ plain: true });
-console.log(user);
-// console.log(...user);
+    console.log(user);
+    // console.log(...user);
     res.render('truckprofile', {
       user,
       logged_in: true
@@ -82,14 +80,22 @@ console.log(user);
   }
 });
 
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/truckprofile');
-//     return;
-//   }
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/truckprofile');
+    return;
+  }
+  res.render('loginpage');
+});
 
-//   res.render('login');
-// });
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/truckprofile');
+    return;
+  }
+  res.render('signup');
+});
 
-  module.exports = router;
+module.exports = router;
