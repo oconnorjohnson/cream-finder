@@ -3,15 +3,17 @@ const { Route, User, Truck } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/truckprofile');
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   res.redirect('/truckprofile');
+  //   return;
+  // }
 
-  res.render('login');
+  console.log(req.session, 'asdfasdf')
+
+  res.render('login', {
+    logged_In: req.session.logged_in,
+  });
 });
-
-  
 
 // router.get('/', async (req, res) => {
 //   try {
@@ -66,12 +68,12 @@ router.get('/truckprofile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Route }, {model: Truck}],
+      include: [{ model: Route }, { model: Truck }],
     });
 
     const user = userData.get({ plain: true });
-console.log(user);
-// console.log(...user);
+    console.log(user);
+    // console.log(...user);
     res.render('truckprofile', {
       user,
       logged_in: true
@@ -82,14 +84,22 @@ console.log(user);
   }
 });
 
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/truckprofile');
-//     return;
-//   }
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/truckprofile');
+    return;
+  }
+  res.render('loginpage');
+});
 
-//   res.render('login');
-// });
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/truckprofile');
+    return;
+  }
+  res.render('signup');
+});
 
-  module.exports = router;
+module.exports = router;

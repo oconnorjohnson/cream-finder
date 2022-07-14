@@ -1,37 +1,80 @@
 :root {
-    --lightblue: #e3f2fd;
-    --blue: #bbdefb;
-    --darkblue: #90caf9;
-    --darkestblue: #64b5f6;
-    --shadowblue: #0d47a1;
-    --lightyellow: #fff9c4;
-    --yellow: #fff59d;
-    --darkyellow: #fff176;
-    --sunshadowyellow: #fdd835;
-    --icecreampink: #f48fb1;
-    --coneorange: #ffd180;
+  --lightblue: #e3f2fd;
+  --blue: #bbdefb;
+  --darkblue: #90caf9;
+  --darkestblue: #64b5f6;
+  --shadowblue: #0d47a1;
+  --lightyellow: #fff9c4;
+  --yellow: #fff59d;
+  --darkyellow: #fff176;
+  --sunshadowyellow: #fdd835;
+  --icecreampink: #f48fb1;
+  --coneorange: #ffd180;
+  --pinky: #E694B0;
 }
 
 * {
-display: flexbox;
-font-family: 'Kanit', medium;
-/* font-family: 'Open Sans', sans-serif; */
-background-color: var(--darkblue);
-color: var(--icecreampink);
-justify-content: center;
-font-weight: lighter;
+  display: flexbox;
+  font-family: 'Kanit', medium;
+  /* font-family: 'Open Sans', sans-serif; */
+  background-color: var(--darkblue);
+  color: var(--icecreampink);
+  justify-content: center;
+  font-weight: lighter;
+}
+
+header {
+  display: flex !important;
+  background-color: var(--pinky);
+  height: 50px;
+  justify-content: space-between;
+  padding: 4px 10px 4px 10px;
+}
+
+nav {
+  background-color: var(--pinky);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#signup {
+  /* font-size: 14px; */
+  color: var(--pinky);
+}
+
+#login {
+  background-color: var(--lightblue);
+  color: var(--pinky);
+  /* color: var(--yellow) */
+}
+
+#logout {
+  background-color: var(--lightblue);
+  color: var(--pinky);
+}
+
+#logo {
+  height: 40px;
+  width: 80px;
+  background-color: var(--pinky);
 }
 
 #image {
   width: 100%;
-  max-width: 99%;
-  height: auto;
+  max-width: 100%;
+  /* height: auto; */
+  background-color: var(--pinky);
 }
+
 #truckinfo.col-md-6 {
   background-color: white;
-  border:#4a4a4a;
+  border: #4a4a4a;
   border-width: 2px;
 }
+
 .col-md-3 {
   flex-direction: column;
 }
@@ -40,6 +83,7 @@ font-weight: lighter;
 accordian-item {
   background-color: white;
 }
+
 accordian-body {
   background-color: white;
 }
@@ -60,26 +104,21 @@ strong {
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    header {
-      background: var(--darkblue);
-    }
+  /* header {
+    background: var(--darkblue);
+  } */
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  /* nav {
+    background-color: var(--darkblue);
+  } */
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: var(--darkblue);
   }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: var(--darkblue);
-    }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color:var(--darkblue);
-    }
-  }
-  
-
-
-
-
+}

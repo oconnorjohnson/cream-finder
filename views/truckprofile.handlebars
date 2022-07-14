@@ -11,45 +11,44 @@
     <h6>EX: UC Davis, 1 Shields Ave, Davis CA, 95616, ETA: 12:00PM</h6>
 
     <form class="form new-route-form">
-      <div class="form-group">
+      <div class="form-group d-flex flex-column d-flex flex-column">
         <label for="route-name">ROUTE NAME</label>
         <input class="form-input" type="text" id="route-name" name="route-name" />
       </div>
-      <div class="form-group">
+      <div class="form-group d-flex flex-column">
         <label for="">FIRST STOP</label>
         <textarea class="form-input" id="address" name="first-stop"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group d-flex flex-column">
         <label for="">SECOND STOP</label>
         <textarea class="form-input" id="second-stop" name="second-stop"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group d-flex flex-column">
         <label for="">THIRD STOP</label>
         <textarea class="form-input" id="third-stop" name="third-stop"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group d-flex flex-column">
         <label for="">FOURTH STOP</label>
         <textarea class="form-input" id="fourth-stop" name="fourth-stop"></textarea>
       </div>
-       <div class="form-group">
+      <div class="form-group d-flex flex-column">
         <label for="">FIFTH STOP</label>
         <textarea class="form-input" id="fifth-stop" name="fifth-stop"></textarea>
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">ADD ROUTE</button>
+      <div class="form-group d-flex flex-column">
+        <button type="submit" class="btn btn-primary" id="login">ADD ROUTE</button>
       </div>
     </form>
   </div>
 
   <div class="col-md-6 stop-list">
     <h3>Your Stops:</h3>
-
     {{#each user.Routes as |route|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
+    <div class="mb-2">
+      <div class="col">
         <h4>{{route.routeid}}</h4>
       </div>
-      <div class="col-md-4">
+      <div class="col d-flex justify-content-between">
         <span>{{route.address}}</span>
         <button class="btn btn-sm btn-danger" data-id="{{route.route_id}}">DELETE</button>
       </div>

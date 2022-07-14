@@ -3,7 +3,7 @@ const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
-    console.log(req.body);
+    console.log(req.body, 'ffffffcccc');
     const userData = await User.create(req.body);
 
     req.session.save(() => {
@@ -38,18 +38,18 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      
+
       // res.json({ user: userData, message: 'You are now logged in!' });
-    
-    const user = userData.get({plain:true})
-    console.log(user);
-    if (user.driver) {
-      res.render('truckprofile');
-    }
-    else {
-      res.render('homepage')
-    }
-  });
+
+      const user = userData.get({ plain: true })
+      console.log(user);
+      if (user.driver) {
+        res.render('truckprofile');
+      }
+      else {
+        res.render('homepage')
+      }
+    });
   } catch (err) {
     res.status(400).json(err);
   }
