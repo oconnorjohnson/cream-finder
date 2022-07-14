@@ -41,7 +41,19 @@ img {
 }
 
 #signup {
-  font-size: 14px;
+  /* font-size: 14px; */
+  color: var(--pinky);
+}
+
+#login {
+  background-color: var(--lightblue);
+  color: var(--pinky);
+  /* color: var(--yellow) */
+}
+
+#logout {
+  background-color: var(--lightblue);
+  color: var(--pinky);
 }
 
 #logo {
