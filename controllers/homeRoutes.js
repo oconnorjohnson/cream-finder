@@ -15,6 +15,9 @@ router.get('/', async (req, res) => {
   });
 });
 
+
+// for future development, will get truck data on homepage, 
+// including new routes and trucks
 // router.get('/', async (req, res) => {
 //   try {
 //     // Get all projects and JOIN with user data
@@ -40,6 +43,8 @@ router.get('/', async (req, res) => {
 //   }
 // });
 
+
+// future development, will get truck/user by id
 // router.get('/route/:id', async (req, res) => {
 //   try {
 //     const routeData = await Route.findByPk(req.params.id, {
@@ -73,7 +78,6 @@ router.get('/truckprofile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
     console.log(user);
-    // console.log(...user);
     res.render('truckprofile', {
       user,
       logged_in: true
