@@ -4,31 +4,40 @@
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Packages](#Packages)
-* [Technologies](#Technologies)
-* [Contributors](#contributors)
-* [Contact](#contact)
+* [Description](#description-📃)
+* [Installation](#installation-💾)
+* [Usage](#usage-💻)
+* [Packages](#packages)
+* [Technologies](#technologies-used)
+* [Contributors](#contributors-👪)
+* [Links](#links)
+* [Contact](#contact-✉️)
 <!-- * [License](#license) -->
 
 
-## General Information 📃
-- A quick description of the project - > A web-based full-stack application which accepts ice cream truck driver routes and displays locations for ice cream enthusiasts
+## Description 📃
+- Cream Finder is a web-based full-stack application which accepts ice cream truck driver routes and displays locations for ice cream enthusiasts. If you are an ice cream truck driver, you will be able to add your stops so that customers will be able to find you. If you are an ice cream enthusiast then you will be able to look at where they stop.
 
 
 ## Usage  💻 
 How does one go about using it?
-* E-commerce Backend
+- [Cream Finder](https://enthousiaste-monsieur-80020.herokuapp.com/) will take you to the deployed site on heroku.
+* There will be a list of truck names containing their stops.
+* On the nav bar there will be a log in and sign up button. 
+* If you have an account then you log in and it will take you to your profile where you can delete your stops or add new stops.
+* If you don't have an account then you click the sign up button.
+* There will be two options, you either sign up as a business owner or a customer.
+* Signing up as a business owner will take you to a page where you can add your stops. 
+
 
 
 ## Installation 💾
 * Git clone the repository onto the user machine.
 Run npm init and then npm install where the application was cloned.
 Use the schema.sql file in the db folder to create the databases.
-Use the .env.EXAMPLE file as a template for creating an .env with the proper credentials.
+Create an .env file with the proper credentials.
 Once the database has been created, use "npm run seed" in the terminal while in the root folder if example data is needed.
+Once seeded, use "node server" to run server and in browser type http://localhost:3001/
 
 
 
@@ -63,6 +72,11 @@ Once the database has been created, use "npm run seed" in the terminal while in 
 * Marvin Santiago [MaSalo13](http://github.com/MaSalo13)
 * Ozer Kelgem     [ozerkerr](http://github.com/ozerkerr)
 
+
+## Links 
+[Github](https://github.com/oconnorjohnson/cream-finder)
+
+[Heroku](https://enthousiaste-monsieur-80020.herokuapp.com/)
 
 ## Contact ✉️
 Find us on Github @ [oconnorjohnson](http://github.com/oconnorjohnson)
